@@ -1,0 +1,179 @@
+@import "/assets/bootstrap5/css/bootstrap.css";
+@import "./color.scss";
+@import "./font.scss";
+
+.importedfamily{
+    font-family: $font-Poppins;
+}
+.fontweight400{ font-weight:$font400;}
+.fontweight500{font-weight:$font500;}
+.fontweight600{font-weight:$font600;}
+.fontweight700{font-weight:$font700;}
+
+// MOBILE
+@media screen and (max-width:997px ){
+    .importedfamily{
+        height: 110vh;
+        background-color: $prRed;
+        @media screen and (max-width:767px) {
+            height: auto;
+            background-color: $prRed;
+        }
+    }
+    .container-custom{
+        display: block ;
+        
+        background-image: url("/images/bg-intro-mobile.png");
+        & .content{
+            color: #ffffff;
+        }
+        & .form-validation{
+            & .btnforfree{
+                background-color: $acBlue;
+                color: #ffffff;
+                box-shadow: 0 6px 0 rgba(gray,.5);
+                border-radius: .5rem;
+            }
+            & .form-submit{
+                background-color: #ffffff;
+                border-radius: .5rem;
+                box-shadow: 0 6px 0 rgba(gray,.5);
+                & .inputed{ position: relative;
+                    & input{
+                        outline: none;
+                        border: none;
+                        border: 1px solid $nuGrayishBlue;
+                    } 
+                }
+                & .inputed .error-icon{
+                    position: absolute;
+                    display: none;
+                    background-image: url("/images/icon-error.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 20px;
+                    height: 20px;
+                    top:20px;
+                    right: 20px;
+                }
+                & .inputed .error-text{ 
+                        visibility: hidden;
+                        font-size:12px;
+                        text-align: right;
+                        padding: 3px 0 0 0;
+                        color: $prRed;
+                }
+                
+     
+                & #submit{
+                    color: #ffffff;
+                    background-color: $prGreen;
+                    border: none;
+                    outline: none;
+                    text-transform: uppercase;
+                    box-shadow: 0px 4px 0 hsl(154, 58%, 46%);
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                & .policy{
+                    color: $nuGrayishBlue;
+                    text-align: center;
+                    padding: 6px 50px;
+                    & span{
+                        color: $prRed;
+                    }
+                }
+            }
+        }
+    }
+}
+// End 
+
+// DESKTOP
+@media screen and (min-width:997px){
+    .importedfamily{
+        height: 100vh;
+        background-color: $prRed;
+    }
+    .container-custom{
+        display: flex;
+        height: auto;
+        max-width: 1150px !important;
+       
+        background-image: url("/images/bg-intro-desktop.png");
+        & .content{
+            color: #ffffff;
+            width:60%;
+        }
+        & .form-validation{
+            width: 40%;
+            & .btnforfree{
+                background-color: $acBlue;
+                color: #ffffff;
+                box-shadow: 0 6px 0 rgba(gray,.5);
+                border-radius: .5rem;
+                & br{
+                    display: none;
+                }
+            }
+            & .form-submit{
+                background-color: #ffffff;
+                border-radius: .5rem;
+                box-shadow: 0 6px 0 rgba(gray,.5);
+                
+                & .inputed{ position: relative;
+                    & input{
+                        padding: 12px !important;
+                        outline: none;
+                        border: none;
+                        border: 1px solid $nuGrayishBlue;
+                    } 
+                }
+                & .inputed .error-icon{
+                    position: absolute;
+                    display: none;
+                    background-image: url("/images/icon-error.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 20px;
+                    height: 20px;
+                    top:20px;
+                    right: 20px;
+                }
+                & .inputed .error-text{ 
+                        visibility: hidden;
+                        font-size:12px;
+                        text-align: right;
+                        padding: 3px 0 0 0;
+                        color: $prRed;
+                }
+                
+     
+                & #submit{
+                    color: #ffffff;
+                    background-color: $prGreen;
+                    border: none;
+                    outline: none;
+                    text-transform: uppercase;
+                    box-shadow: 0px 4px 0 hsl(154, 58%, 46%);
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                & .policy{
+                    color: $nuGrayishBlue;
+                    text-align: center;
+                    padding: 6px 50px;
+                    & span{
+                        color: $prRed;
+                    }
+                }
+            }
+        }
+
+       
+    }
+}
+
+

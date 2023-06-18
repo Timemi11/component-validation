@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link href="./assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex align-items-center justify-content-center importedfamily ">
+    <div class="container align-items-center justify-content-center container-custom p-4 rounded">
+      <div class="content text-center">
+        <h1 class="fontweight700 p-t-3">Learn to code by <br> watching others</h1>
+        <p class="p-4">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+      <div class="form-validation">
+        <div class="btnforfree mb-4 p-3 text-center ">
+          Try it free 7 days then <br>$20/mo. thereafter
+        </div>
+
+        <div class="form-submit p-4  ">
+          <!-- First Name  -->
+          <div class="fn-input inputed w-100">
+            <input type="text" class="w-100 p-3 " placeholder="First Name" id="fname">
+            <div class="error-icon"></div>
+            <p class="error-text">First Name cannot be empty</p>
+          </div>
+          <!-- End First Name -->
+
+          <!-- Last Name   -->
+          <div class="ln-input inputed w-100">
+            <input type="text" class="w-100 p-3" placeholder="Last Name" id="lname">
+            <div class="error-icon"></div>
+            <p class="error-text">Last Name cannot be empty</p>
+          </div>
+          <!-- End Last Name  -->
+
+          <!--  Email Address -->
+          <div class="em-input inputed w-100">
+            <input type="email" class="w-100 p-3" placeholder="Email Address" id="email">
+            <div class="error-icon"></div>
+            <p class="error-text">Looks like this is not email</p>
+          </div>
+          <!--  End Email Address -->
+
+          <!-- Password -->
+          <div class="pw-input inputed w-100 ">
+            <input type="password" class="w-100 p-3" placeholder="Password" id="pw">
+            <div class="error-icon"></div>
+            <p class="error-text ">Password cannot be empty</p>
+          </div>
+          <!-- End Password -->
+
+          <!-- Button Claim -->
+          <button id="submit" class="w-100 py-2 mb-3">Claim your free trial</button>
+          <!-- End Button Claim -->
+
+          <!-- Policy -->
+          <p class="policy ">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+          <!-- End Policy -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/validation.js"> </script>
+
+</body>
+
+</html>

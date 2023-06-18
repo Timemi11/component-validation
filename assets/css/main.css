@@ -1,0 +1,178 @@
+@import "/assets/bootstrap5/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.importedfamily {
+  font-family: "Poppins", sans-serif;
+}
+
+.fontweight400 {
+  font-weight: 400;
+}
+
+.fontweight500 {
+  font-weight: 500;
+}
+
+.fontweight600 {
+  font-weight: 600;
+}
+
+.fontweight700 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 997px) {
+  .importedfamily {
+    height: 110vh;
+    background-color: hsl(0, 100%, 74%);
+  }
+}
+@media screen and (max-width: 997px) and (max-width: 767px) {
+  .importedfamily {
+    height: auto;
+    background-color: hsl(0, 100%, 74%);
+  }
+}
+@media screen and (max-width: 997px) {
+  .container-custom {
+    display: block;
+    background-image: url("/images/bg-intro-mobile.png");
+  }
+  .container-custom .content {
+    color: #ffffff;
+  }
+  .container-custom .form-validation .btnforfree {
+    background-color: hsl(248, 32%, 49%);
+    color: #ffffff;
+    box-shadow: 0 6px 0 rgba(128, 128, 128, 0.5);
+    border-radius: 0.5rem;
+  }
+  .container-custom .form-validation .form-submit {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 0 rgba(128, 128, 128, 0.5);
+  }
+  .container-custom .form-validation .form-submit .inputed {
+    position: relative;
+  }
+  .container-custom .form-validation .form-submit .inputed input {
+    outline: none;
+    border: none;
+    border: 1px solid hsl(246, 25%, 77%);
+  }
+  .container-custom .form-validation .form-submit .inputed .error-icon {
+    position: absolute;
+    display: none;
+    background-image: url("/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+  .container-custom .form-validation .form-submit .inputed .error-text {
+    visibility: hidden;
+    font-size: 12px;
+    text-align: right;
+    padding: 3px 0 0 0;
+    color: hsl(0, 100%, 74%);
+  }
+  .container-custom .form-validation .form-submit #submit {
+    color: #ffffff;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 0 hsl(154, 58%, 46%);
+  }
+  .container-custom .form-validation .form-submit #submit:hover {
+    opacity: 0.8;
+  }
+  .container-custom .form-validation .form-submit .policy {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    padding: 6px 50px;
+  }
+  .container-custom .form-validation .form-submit .policy span {
+    color: hsl(0, 100%, 74%);
+  }
+}
+@media screen and (min-width: 997px) {
+  .importedfamily {
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+  }
+  .container-custom {
+    display: flex;
+    height: auto;
+    max-width: 1150px !important;
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+  .container-custom .content {
+    color: #ffffff;
+    width: 60%;
+  }
+  .container-custom .form-validation {
+    width: 40%;
+  }
+  .container-custom .form-validation .btnforfree {
+    background-color: hsl(248, 32%, 49%);
+    color: #ffffff;
+    box-shadow: 0 6px 0 rgba(128, 128, 128, 0.5);
+    border-radius: 0.5rem;
+  }
+  .container-custom .form-validation .btnforfree br {
+    display: none;
+  }
+  .container-custom .form-validation .form-submit {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 0 rgba(128, 128, 128, 0.5);
+  }
+  .container-custom .form-validation .form-submit .inputed {
+    position: relative;
+  }
+  .container-custom .form-validation .form-submit .inputed input {
+    padding: 12px !important;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(246, 25%, 77%);
+  }
+  .container-custom .form-validation .form-submit .inputed .error-icon {
+    position: absolute;
+    display: none;
+    background-image: url("/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+  .container-custom .form-validation .form-submit .inputed .error-text {
+    visibility: hidden;
+    font-size: 12px;
+    text-align: right;
+    padding: 3px 0 0 0;
+    color: hsl(0, 100%, 74%);
+  }
+  .container-custom .form-validation .form-submit #submit {
+    color: #ffffff;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 0 hsl(154, 58%, 46%);
+  }
+  .container-custom .form-validation .form-submit #submit:hover {
+    opacity: 0.8;
+  }
+  .container-custom .form-validation .form-submit .policy {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    padding: 6px 50px;
+  }
+  .container-custom .form-validation .form-submit .policy span {
+    color: hsl(0, 100%, 74%);
+  }
+}/*# sourceMappingURL=main.css.map */
